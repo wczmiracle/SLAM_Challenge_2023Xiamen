@@ -1,0 +1,33 @@
+PCD_data_path: /home/renwei/SLAMChanllenge/Sample/PointClouds
+# PCD_data_path: /media/renwei/PortableSSD/SLAMChallenge/XAC/202210131557/PointClouds
+# PCD_data_path: /media/renwei/PortableSSD/SLAMChallenge/CGR/202212011623/PointClouds
+
+Data_folder: CGR
+Data_name: 202211301647
+N_SCAN: 32           
+Horizon_SCAN: 2000       
+ang_res_x: 0.18     
+ang_res_y: 1.0 
+ang_bottom: 16.1
+sensorMinimumRange: 1.0
+useCloudRing: false
+sensorRange: [3.0, 200.0]
+lidarTopic1: /mapping1/lidar_points
+lidarTopic2: /mapping2/lidar_points
+lidarTopic3: /mapping3/lidar_points
+#Vehicle Filter
+frame_id: aft_mapped
+ifUseCarFilter: false
+FilterBoxSize: [30, 100, 10]
+## cluster parameter
+clusterTolerance: 0.5
+clusterMinSize: 10
+clusterMaxSize: 10000
+## bouding box filter
+box_y_divided_x_thresh_min: 1.1
+box_y_divided_x_thresh_max: 4
+box_scale_z_min: 0.6
+box_scale_z_max: 3.0
+box_scale_x_min: 1.0
+box_scale_y_min: 1.0
+filter_padding: 0.2
